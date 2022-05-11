@@ -19,6 +19,7 @@ export function DataTable() {
     page,
     size: rowsPerPage,
   })
+  console.log(`DataTable > data`, data)
 
   return (
 
