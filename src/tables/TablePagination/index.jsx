@@ -1,7 +1,6 @@
 import { TablePagination as MuiTablePagination } from '@material-ui/core'
 
-const COMPONENT_ROOT_NODE = 'div'
-const ROWS_PER_PAGE = [5, 10, 20]
+const ROWS_PER_PAGE = [5, 10]
 
 export const MUI_PAGE_DEFAULT_VALUE = 0
 export const ROWS_PER_PAGE_DEFAULT_VALUE = 5
@@ -26,7 +25,7 @@ export function TablePagination(props) {
             marginTop: '10px',
           }}
           rowsPerPageOptions={ROWS_PER_PAGE}
-          component={COMPONENT_ROOT_NODE}
+          component="div"
           count={total}
           page={page}
           rowsPerPage={rowsPerPage}

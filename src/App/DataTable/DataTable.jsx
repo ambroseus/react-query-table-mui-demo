@@ -7,18 +7,9 @@ import {
   TablePagination
 } from '../../tables'
 
+import { useGetData } from '../../api'
 import { columns } from './columns'
 
-function useGetData() {
-  return {
-    data: {
-      content: [],
-      totalElements: 0,
-    },
-    isLoading: false,
-    isFetching: false,
-  }
-}
 
 export function DataTable() {
   const [page, setPage] = React.useState(MUI_PAGE_DEFAULT_VALUE)
